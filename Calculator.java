@@ -19,7 +19,11 @@ public class Calculator{
         }else if(operation == 3){
             System.out.println("The product of your numbers is " + (x * y));
         }else if(operation == 4){
-            System.out.println("The quotient of your numbers is " + (x / y));
+            if(y == 0){
+                System.out.println("Error: Divide by Zero");
+            }else{
+                System.out.println("The quotient of your numbers is " + (x / y));
+            }
         }else{
             System.out.println("Sorry, invalid reponse. Please Try again.");
         }
